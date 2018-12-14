@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="springboot 实现热部署的两种方式，亲测有效 ##方法一： ###springloaded — 基于maven启动方式的实现 12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test_my_site">
-<meta property="og:url" content="http://yoursite.com/2018/12/10/test-my-site/index.html">
+<meta property="og:title" content="热部署的实现">
+<meta property="og:url" content="http://yoursite.com/2018/12/14/热部署的实现/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="springboot 实现热部署的两种方式，亲测有效 ##方法一： ###springloaded — 基于maven启动方式的实现 12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-10T09:17:04.168Z">
+<meta property="og:updated_time" content="2018-12-14T03:25:04.239Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test_my_site">
+<meta name="twitter:title" content="热部署的实现">
+<meta name="twitter:description" content="springboot 实现热部署的两种方式，亲测有效 ##方法一： ###springloaded — 基于maven启动方式的实现 12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;">
 
 
 
@@ -116,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/10/test-my-site/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/14/热部署的实现/">
 
 
 
 
 
-  <title>test_my_site | Hexo</title>
+  <title>热部署的实现 | Hexo</title>
   
 
 
@@ -229,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/10/test-my-site/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/14/热部署的实现/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -246,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test_my_site</h1>
+          <h1 class="post-title" itemprop="name headline">热部署的实现</h1>
         
 
         <div class="post-meta">
@@ -258,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-10T17:17:04+08:00">
-                2018-12-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-14T11:05:10+08:00">
+                2018-12-14
               </time>
             
 
@@ -296,7 +299,13 @@
       
 
       
-        
+        <p>   springboot 实现热部署的两种方式，亲测有效</p>
+<p>##方法一：</p>
+<p>###springloaded — 基于maven启动方式的实现</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">   &lt;plugins&gt;</span><br><span class="line">      &lt;!-- 这是spring boot devtool plugin --&gt;</span><br><span class="line">      &lt;plugin&gt;</span><br><span class="line">         &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">         &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">     &#123;    &lt;dependencies&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">               &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">               &lt;artifactId&gt;springloaded&lt;/artifactId&gt;</span><br><span class="line">               &lt;version&gt;1.2.8.RELEASE&lt;/version&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">         &lt;/dependencies&gt;  &#125;--------括号内为添加的依赖</span><br><span class="line">      &lt;/plugin&gt;</span><br><span class="line">   &lt;/plugins&gt;</span><br><span class="line">&lt;/build&gt;</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">mvn spring-boot:run
+</code></pre>
+
       
     </div>
     
@@ -320,8 +329,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/10/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/12/10/test-my-site/" rel="next" title="test_my_site">
+                <i class="fa fa-chevron-left"></i> test_my_site
               </a>
             
           </div>
@@ -329,10 +338,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/14/热部署的实现/" rel="prev" title="热部署的实现">
-                热部署的实现 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
