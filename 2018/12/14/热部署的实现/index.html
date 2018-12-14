@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="springboot 实现热部署的两种方式，亲测有效 ##方法一： ###springloaded — 基于maven启动方式的实现 12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;">
+<meta name="description" content="springboot 实现热部署的两种方式，亲测有效 方法一：springloaded — 基于maven启动方式的实现12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;         &amp;lt;g">
 <meta property="og:type" content="article">
 <meta property="og:title" content="热部署的实现">
 <meta property="og:url" content="http://yoursite.com/2018/12/14/热部署的实现/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="springboot 实现热部署的两种方式，亲测有效 ##方法一： ###springloaded — 基于maven启动方式的实现 12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;">
+<meta property="og:description" content="springboot 实现热部署的两种方式，亲测有效 方法一：springloaded — 基于maven启动方式的实现12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;         &amp;lt;g">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-14T03:25:04.239Z">
+<meta property="og:updated_time" content="2018-12-14T03:29:52.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="热部署的实现">
-<meta name="twitter:description" content="springboot 实现热部署的两种方式，亲测有效 ##方法一： ###springloaded — 基于maven启动方式的实现 12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;">
+<meta name="twitter:description" content="springboot 实现热部署的两种方式，亲测有效 方法一：springloaded — 基于maven启动方式的实现12345678910111213141516&amp;lt;build&amp;gt;   &amp;lt;plugins&amp;gt;      &amp;lt;!-- 这是spring boot devtool plugin --&amp;gt;      &amp;lt;plugin&amp;gt;         &amp;lt;g">
 
 
 
@@ -300,9 +300,7 @@
 
       
         <p>   springboot 实现热部署的两种方式，亲测有效</p>
-<p>##方法一：</p>
-<p>###springloaded — 基于maven启动方式的实现</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">   &lt;plugins&gt;</span><br><span class="line">      &lt;!-- 这是spring boot devtool plugin --&gt;</span><br><span class="line">      &lt;plugin&gt;</span><br><span class="line">         &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">         &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">     &#123;    &lt;dependencies&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">               &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">               &lt;artifactId&gt;springloaded&lt;/artifactId&gt;</span><br><span class="line">               &lt;version&gt;1.2.8.RELEASE&lt;/version&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">         &lt;/dependencies&gt;  &#125;--------括号内为添加的依赖</span><br><span class="line">      &lt;/plugin&gt;</span><br><span class="line">   &lt;/plugins&gt;</span><br><span class="line">&lt;/build&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h2><h3 id="springloaded-—-基于maven启动方式的实现"><a href="#springloaded-—-基于maven启动方式的实现" class="headerlink" title="springloaded — 基于maven启动方式的实现"></a>springloaded — 基于maven启动方式的实现</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;build&gt;</span><br><span class="line">   &lt;plugins&gt;</span><br><span class="line">      &lt;!-- 这是spring boot devtool plugin --&gt;</span><br><span class="line">      &lt;plugin&gt;</span><br><span class="line">         &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">         &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;</span><br><span class="line">     &#123;    &lt;dependencies&gt;</span><br><span class="line">            &lt;dependency&gt;</span><br><span class="line">               &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">               &lt;artifactId&gt;springloaded&lt;/artifactId&gt;</span><br><span class="line">               &lt;version&gt;1.2.8.RELEASE&lt;/version&gt;</span><br><span class="line">            &lt;/dependency&gt;</span><br><span class="line">         &lt;/dependencies&gt;  &#125;--------括号内为添加的依赖</span><br><span class="line">      &lt;/plugin&gt;</span><br><span class="line">   &lt;/plugins&gt;</span><br><span class="line">&lt;/build&gt;</span><br></pre></td></tr></table></figure>
 <pre><code class="bash">mvn spring-boot:run
 </code></pre>
 
@@ -389,8 +387,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -432,6 +439,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一："><span class="nav-number">1.</span> <span class="nav-text">方法一：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#springloaded-—-基于maven启动方式的实现"><span class="nav-number">1.1.</span> <span class="nav-text">springloaded — 基于maven启动方式的实现</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
